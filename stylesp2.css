@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('ttt.png'); /* replace with your background image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  background-image: url('ttt.png'); /* same as background image */
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.play-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.block {
+  background-color: #000000; /* changed to dark gray */
+  padding: 2rem;
+  border: 1px solid #fff; /* changed to white border */
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #fff; /* changed to white text color */
+}
+
+.block:hover {
+  background-color: #444; /* changed to darker gray on hover */
+}
+
+.block:active {
+  background-color: #ccc; /* changed to light gray on active */
+}
+
+.block.X {
+  background-color: #fff; /* changed to white background */
+  color: #000; /* changed to black text color */
+}
+
+.block.O {
+  background-color: #fff; /* changed to white background */
+  color: #f15800; /* changed to orange text color */
+}
+
+#reset-button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+#reset-button:hover {
+  background-color: #444;
+}
+
+#winner {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+  width: 100%;
+}
